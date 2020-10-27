@@ -30,7 +30,9 @@ app.use(function (req, res, next) {
           message: "jwt issuer invalid. expected: " + expectedIssuer
         });
       }
-
+     
+      console.log("TEST!!");
+      
       return next();
     },
   });
